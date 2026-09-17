@@ -2,42 +2,37 @@
 
 ## End-to-End Architecture
 
+```text
 Olist Public Dataset
-        |
-        v
+        ↓
 Data Ingestion
-        |
-        v
+        ↓
 Data Quality Validation
-        |
-        v
+        ↓
 Cleaned Data
-        |
-        v
+        ↓
 PostgreSQL
-        |
-        +------------------+------------------+
-        |                  |                  |
-        v                  v                  v
-  Revenue SQL       Customer SQL       Operations SQL
-        |                  |                  |
-        +------------------+------------------+
-                           |
-                           v
-                  Analytical Data Layer
-                           |
-              +------------+------------+
-              |            |            |
-              v            v            v
-        Revenue Risk  Customer Value  Anomalies
-              |            |            |
-              +------------+------------+
-                           |
-                           v
-                       Power BI
-                           |
-                           v
-                 Business Decision Support
+        ↓
+├───────────────────────┬───────────────────────┐
+│                       │                       │
+↓                       ↓                       ↓
+Revenue SQL        Customer SQL        Operations SQL
+        │                       │                       │
+        └───────────────────────┴───────────────────────┘
+                                ↓
+                    Analytical Data Layer
+                                ↓
+           ┌───────────────────────┬───────────────────────┐
+           │                       │                       │
+           ↓                       ↓                       ↓
+      Revenue Risk         Customer Value            Anomalies
+           │                       │                       │
+           └───────────────────────┴───────────────────────┘
+                                ↓
+                            Power BI
+                                ↓
+                  Business Decision Support
+```
 
 ## Technology Stack
 
@@ -69,25 +64,18 @@ PostgreSQL
 
 ## Data Flow
 
+```text
 Olist CSV Files
-    ->
-Python Ingestion
-    ->
-Data Quality Validation
-    ->
-PostgreSQL
-    ->
-SQL Transformations
-    ->
-Analytical Tables
-    ->
-Business Analytics
-    ->
-Power BI Dashboard
-    ->
-Business Insights
+  → Python Ingestion
+  → Data Quality Validation
+  → PostgreSQL
+  → SQL Transformations
+  → Analytical Tables
+  → Business Analytics
+  → Power BI Dashboard
+  → Business Insights
+```
 
 ## Traceability Principle
 
-Important dashboard metrics should be traceable back to the original Olist
-source data through the PostgreSQL analytical layer.
+Important dashboard metrics should be traceable back to the original Olist source data through the PostgreSQL analytical layer.
