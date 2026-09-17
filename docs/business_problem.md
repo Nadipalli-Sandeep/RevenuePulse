@@ -2,7 +2,7 @@
 
 ## Project Title
 
-RevenuePulse � Customer Value, Revenue Leakage and Operational Risk Analytics
+RevenuePulse — Customer Value, Revenue Leakage and Operational Risk Analytics
 
 ## Business Domain
 
@@ -12,23 +12,15 @@ E-commerce / Retail Analytics
 
 RevenuePulse uses the Brazilian E-Commerce Public Dataset by Olist.
 
-The dataset contains approximately 100,000 real, anonymized e-commerce orders
-from 2016 to 2018 and includes information covering orders, customers,
-products, payments, freight, delivery performance and customer reviews.
+The dataset contains approximately 100,000 real, anonymized e-commerce orders from 2016 to 2018 and includes information covering orders, customers, products, payments, freight, delivery performance, and customer reviews.
 
-Source:
-https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+Source: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 
 ## Business Problem
 
-E-commerce businesses generate large amounts of transactional and operational
-data. Basic reporting can show sales and order volumes, but deeper analysis is
-needed to understand customer value, revenue performance, delivery issues,
-returns, product performance and potential revenue leakage.
+E-commerce businesses generate large amounts of transactional and operational data. Basic reporting can show sales and order volumes, but deeper analysis is needed to understand customer value, revenue performance, delivery issues, returns, product performance, and potential revenue leakage.
 
-RevenuePulse builds an end-to-end analytics pipeline that transforms the raw
-Olist data into business-ready analytical datasets and decision-support
-insights.
+RevenuePulse builds an end-to-end analytics pipeline that transforms raw Olist data into business-ready analytical datasets and decision-support insights.
 
 ## Primary Objective
 
@@ -66,8 +58,7 @@ Build a reproducible analytics solution covering:
 9. How do freight costs affect order economics?
 10. Which products or categories have weak revenue-to-cost relationships?
 11. How are cancellations and delivered-order failures affecting revenue?
-12. Are there combinations of discounts, freight and order characteristics
-    associated with weaker economics?
+12. Are there combinations of discounts, freight, and order characteristics associated with weaker economics?
 
 ### Operations
 
@@ -78,35 +69,35 @@ Build a reproducible analytics solution covering:
 ### Decision Support
 
 16. Which areas should management investigate first?
-17. Which customers, products or operational segments require attention?
-18. Can historical behaviour be converted into useful risk or anomaly signals?
+17. Which customers, products, or operational segments require attention?
+18. Can historical behavior be converted into useful risk or anomaly signals?
 
 ## Primary KPIs
 
-- Total Orders
-- Delivered Orders
-- Cancelled Orders
-- Gross Revenue
-- Freight Revenue
-- Freight Cost
-- Average Order Value
-- Repeat Customer Rate
-- Customer Lifetime Value
-- RFM Segment
-- Delivery Delay Rate
-- Cancellation Rate
-- Return / Review Indicators
-- Average Review Score
-- Revenue Concentration
-- Customer Risk Indicators
+- Total orders
+- Delivered orders
+- Cancelled orders
+- Gross revenue
+- Freight revenue
+- Freight cost
+- Average order value
+- Repeat customer rate
+- Customer lifetime value
+- RFM segment
+- Delivery delay rate
+- Cancellation rate
+- Return / review indicators
+- Average review score
+- Revenue concentration
+- Customer risk indicators
 
 ## Analytical Layers
 
-### Layer 1 � Raw Data
+### Layer 1 — Raw Data
 
 Original Olist CSV datasets.
 
-### Layer 2 � Data Quality
+### Layer 2 — Data Quality
 
 Validation of:
 
@@ -118,18 +109,17 @@ Validation of:
 - Outliers
 - Cross-table consistency
 
-### Layer 3 � PostgreSQL
+### Layer 3 — PostgreSQL
 
 Cleaned and modeled data stored in PostgreSQL.
 
-### Layer 4 � Analytics
+### Layer 4 — Analytics
 
-Business-focused SQL, Python and statistical analysis.
+Business-focused SQL, Python, and statistical analysis.
 
-### Layer 5 � Decision Dashboard
+### Layer 5 — Decision Dashboard
 
-Power BI dashboard designed around business questions rather than only
-visual presentation.
+Power BI dashboard designed around business questions rather than only visual presentation.
 
 ## Expected Output
 
@@ -147,16 +137,15 @@ visual presentation.
 
 ## Project Principle
 
-The public dataset is the source data. The analytical framework, data model,
-SQL layer, derived metrics, customer-health methodology, risk signals,
-visualizations and business interpretation are implemented as part of
-RevenuePulse.
+The public dataset is the source data. The analytical framework, data model, SQL layer, derived metrics, customer-health methodology, risk signals, visualizations, and business interpretation are implemented as part of RevenuePulse.
 
+```text
 Raw Data
-? Data Quality
-? Data Engineering
-? SQL
-? Analytics
-? Risk Signals
-? Power BI
-? Business Insights
+  → Data Quality
+  → Data Engineering
+  → SQL
+  → Analytics
+  → Risk Signals
+  → Power BI
+  → Business Insights
+```

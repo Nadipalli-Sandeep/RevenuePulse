@@ -1,11 +1,10 @@
 # RevenuePulse Methodology
 
-## Phase 1 – Business Understanding
+## Phase 1 â€” Business Understanding
 
-Define the business problem, analytical questions, KPIs and data requirements
-using the Olist e-commerce dataset.
+Define the business problem, analytical questions, KPIs, and data requirements using the Olist e-commerce dataset.
 
-## Phase 2 – Data Engineering and Quality
+## Phase 2 â€” Data Engineering and Quality
 
 Load the public Olist datasets and perform:
 
@@ -17,7 +16,7 @@ Load the public Olist datasets and perform:
 - Numerical-range validation
 - Cross-table consistency checks
 
-## Phase 3 – PostgreSQL and SQL
+## Phase 3 â€” PostgreSQL and SQL
 
 Build a relational analytical model in PostgreSQL.
 
@@ -29,7 +28,7 @@ Create:
 - Dimension tables
 - Analytical views
 
-## Phase 4 – Advanced Analytics
+## Phase 4 â€” Advanced Analytics
 
 Perform:
 
@@ -44,7 +43,7 @@ Perform:
 - Statistical anomaly detection
 - Customer risk signals
 
-## Phase 5 – Business Intelligence
+## Phase 5 â€” Business Intelligence
 
 Build the Power BI dashboard.
 
@@ -75,6 +74,4 @@ Dashboard sections:
 
 The project uses real public commercial data rather than synthetic data.
 
-The originality of the project comes from the analytical methodology,
-data model, derived business metrics, risk framework and decision-support
-implementation built on top of the source data.
+The originality of the project comes from the analytical methodology, data model, derived business metrics, risk framework, and decision-support implementation built on top of the source data.
